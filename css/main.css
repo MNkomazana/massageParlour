@@ -1,5 +1,5 @@
 :root{
-    --litePurple:#4d0e5a;
+    --purple:#4d0e5a;
 }
 *{
     margin:0;
@@ -24,7 +24,7 @@ body{
 .branding{
     background-color:#fff;
     font-family: 'Sacramento', Arial, sans-serif;
-    color:var(--litePurple);
+    color:var(--purple);
     display: flex;
     height:100%;
     align-items: center;
@@ -34,16 +34,23 @@ body{
 .menu{
     display:flex;
     flex-direction: column;
-    /* width:50%; */
     height:100%;
     text-align:right;
     align-items:flex-end;
     justify-content: center;
     padding:0px 10px;
 }
+.menu a{
+    text-decoration: none;
+    color:var(--purple);
+    font-weight: bold;
+}
 #container{
     height:auto;
     width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .bg_lite_color{
     background-image:url(../images/bgPic.jpg);
@@ -53,17 +60,23 @@ body{
     background-position: center;
     display:flex;
     z-index:-1;
-}
+} 
 .services{
     padding:20px;
-    background-color:var(--litePurple);
+    background-color:var(--purple);
     color:#fff;
-    height:100vh;
+    height:700px;
+    max-height:700px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index:5;
     opacity:0.6;
 }
-
-
+.services h2{
+    font-size:2.5em;
+}
  /* Services page ends here */
 
 /* Mobile First: Media queries */
