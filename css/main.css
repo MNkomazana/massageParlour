@@ -20,9 +20,9 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color:#fff;
 }
 .branding{
-    background-color:#fff;
     font-family: 'Sacramento', Arial, sans-serif;
     color:var(--purple);
     display: flex;
@@ -30,6 +30,9 @@ body{
     align-items: center;
     justify-content: center;
     padding: 0px 10px;
+}
+.brand_name h1{
+    font-size:2rem;
 }
 .menu{
     display:flex;
