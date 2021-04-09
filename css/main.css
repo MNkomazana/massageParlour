@@ -1,0 +1,74 @@
+:root{
+    --litePurple:#4d0e5a;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:0;
+}
+body{
+    font-size:16px;
+    font-family:'Open Sans Condensed', Arial, Helvetica, sans-serif;
+    width:100vw;
+}
+/* Services page starts here */
+.branding_wrapper{
+    width:90vw;
+    height:100px;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.branding{
+    background-color:#fff;
+    font-family: 'Sacramento', Arial, sans-serif;
+    color:var(--litePurple);
+    display: flex;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+    /* width:50%; */
+    height:100%;
+    text-align:right;
+    align-items:flex-end;
+    justify-content: center;
+    padding:0px 10px;
+}
+#container{
+    height:auto;
+    width:100vw;
+}
+.bg_lite_color{
+    background-image:url(../images/bgPic.jpg);
+    background-repeat: no-repeat;
+    background-origin:center;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    z-index:-1;
+}
+.services{
+    padding:20px;
+    background-color:var(--litePurple);
+    color:#fff;
+    height:100vh;
+    z-index:5;
+    opacity:0.6;
+}
+
+
+ /* Services page ends here */
+
+/* Mobile First: Media queries */
+@media screen and (min-width:600px){
+    body{
+        display:none;
+    }
+}
