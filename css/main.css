@@ -1,5 +1,6 @@
 :root{
     --purple:#4d0e5a;
+    --litePurple:#dfc9e4;
 }
 *{
     margin:0;
@@ -13,7 +14,7 @@ body{
 }
 /* Services page starts here */
 .branding_wrapper{
-    width:90vw;
+    width:100%;
     height:100px;
     margin:auto;
     display:flex;
@@ -50,8 +51,9 @@ body{
 }
 #container{
     height:auto;
-    width:100vw;
+    width:100%;
     display:flex;
+    flex-direction: column;
     align-items:center;
     justify-content:center;
 }
@@ -82,7 +84,75 @@ body{
 }
  /* Services page ends here */
 
-/* Mobile First: Media queries */
+ /* Gallery Styling starts here*/
+ 
+ /* Gallery Styling ends here*/
+
+ /* Form styling starts here */
+ #contact_form{
+     width:100%;
+ }
+ .form-container{
+     width:80%;
+     margin:auto;
+     padding:20px;
+ }
+ .form-header{
+     display:flex;
+     width:100%;
+     height:50px;
+     align-items:center;
+ }
+ .form-header h4{
+     width:100%;
+     text-align:center;
+     font-size:2em;
+     color:var(--purple);
+ }
+ .form form{
+     width:80%;
+     margin:auto;
+     font-size:1em;
+ }
+ .form form label{
+     color:var(--purple);
+     font-weight:bold;
+ }
+ .form form input[type="text"],
+ .form form input[type="email"]{
+     margin-bottom:20px;
+     height:1.5em;
+     width: 80%;
+     padding:5px;
+     border:1px solid var(--purple);
+     border-right:none;
+     border-left:none;
+     border-top:none;
+     margin-top:6px;
+ }
+ .form form textarea{
+     resize:vertical;
+     width:80%;
+     border:1px solid var(--purple);
+     padding:5px;
+     margin-top:6px;
+ }
+ #btn-submit{
+     width:85%;
+     height:2em;
+     padding:4px;
+     color:#fff;
+     font-size:1.6em;
+     background-color:var(--purple);
+     border-radius:9px;
+     border:transparent;
+     margin-top:10px;
+     margin-bottom:10px;
+ }
+ /* Form styling ends here */
+
+
+/* Big Screens: Media queries */
 @media screen and (min-width:600px){
     body{
         display:none;
