@@ -20,7 +20,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:#fff;
+    background-color:#f2f5f5;
 }
 .branding{
     font-family: 'Sacramento', Arial, sans-serif;
@@ -37,11 +37,11 @@ body{
 .menu{
     display:flex;
     flex-direction: column;
-    height:100%;
     text-align:right;
     align-items:flex-end;
     justify-content: center;
     padding:0px 10px;
+    margin-right:20px;
 }
 .menu a{
     text-decoration: none;
@@ -49,7 +49,7 @@ body{
     font-weight: bold;
 }
 #container{
-    height:auto;
+    max-height:100vh;
     width:100%;
     display:flex;
     flex-direction: column;
@@ -84,25 +84,125 @@ body{
  /* Services page ends here */
 
  /* Gallery Styling starts here*/
- 
+ #gallery{
+     display:flex;
+     flex-direction: column;
+     height:100vh;
+     width:100vw;
+ }
+ .gallery-header{
+     height:100px;
+     width:100%;
+     padding:20x;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content: center;
+     color:var(--purple);
+     font-size:1.2em;
+     font-family:'Open Sans Condensed', Arial, Helvetica;
+ }
+ .gallery-grid{
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(3,1fr);
+     grid-gap:10px;
+     height:80vh;
+     width:80%;
+     margin:auto;
+ }
+ .image1{
+     grid-column: 1/span 1;
+     grid-row:1/span 1;
+     background-image: url(../images/gallery1.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-origin: center;
+ }
+ .image2{
+    grid-column:2/span 1;
+    grid-row:1/span 1;
+    background-image: url(../images/gallery2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: center;
+}
+.image3{
+    grid-column:1/span 1;
+    grid-row:2/span 1;
+    background-image: url(../images/gallery3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: center;
+}
+.image4{
+    grid-column:2/span 1;
+    grid-row:2/span 1;
+    background-image: url(../images/gallery4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: center;
+}
+.image5{
+    grid-column:1/span 1;
+    grid-row:3/span 1;
+    background-image: url(../images/gallery5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: center;
+}
+.image6{
+    grid-column:2/span 1;
+    grid-row:3/span 1;
+    background-image: url(../images/gallery6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: center;
+}
+.transparent-bg{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.transparent-bg a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 2em;
+    font-family:'Sacramento', Arial, sans-serif ;
+}
+.transparent-bg:hover{
+    background-color:var(--litePurple);
+    opacity:0.8;
+    transition: background-color 0.6s ease-in-out;
+}
  /* Gallery Styling ends here*/
 
  /* Form styling starts here */
  #contact_form{
-     width:100%;
+     width:100vw;
      height:100vh;
      background-color:var(--litePurple);
  }
  .form-container{
-     width:80%;
+     width:50%;
      margin:auto;
      padding:20px;
  }
  .form-header{
      display:flex;
-     width:100%;
+     /* width:100%; */
      height:50px;
      align-items:center;
+     padding:20px;
  }
  .form-header h4{
      width:100%;
@@ -123,7 +223,7 @@ body{
  .form form input[type="email"]{
      margin-bottom:20px;
      height:1.5em;
-     width: 80%;
+     width: 100%;
      padding:5px;
      border:1px solid var(--purple);
      border-right:none;
@@ -131,17 +231,20 @@ body{
      border-top:none;
      margin-top:6px;
      outline:none;
+     border-top-left-radius:4px;
+     border-top-right-radius:4px;
  }
  .form form textarea{
      resize:vertical;
-     width:80%;
+     width:100%;
      border:1px solid var(--purple);
      padding:5px;
      margin-top:6px;
      outline:none;
+     border-radius:4px;
  }
  #btn-submit{
-     width:85%;
+     width:100%;
      height:2em;
      padding:4px;
      color:#fff;
@@ -149,8 +252,7 @@ body{
      background-color:var(--purple);
      border-radius:9px;
      border:transparent;
-     margin-top:10px;
-     margin-bottom:10px;
+     margin:10px auto;
  }
  /* Form styling ends here */
 
